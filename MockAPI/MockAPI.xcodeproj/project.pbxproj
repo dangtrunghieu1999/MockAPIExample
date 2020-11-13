@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF23D12D255E1F9800520ED2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23D12C255E1F9800520ED2 /* ViewController.swift */; };
+		CF5CF992255E1DEF004A7CFC /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5CF991255E1DEF004A7CFC /* RequestProtocol.swift */; };
+		CF5CF995255E1EB1004A7CFC /* Mock API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5CF994255E1EB1004A7CFC /* Mock API.swift */; };
+		CF5CF998255E1EB7004A7CFC /* RealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5CF997255E1EB7004A7CFC /* RealAPI.swift */; };
 		CF7ED1CB255E1C750058DEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ED1CA255E1C750058DEA0 /* AppDelegate.swift */; };
 		CF7ED1CD255E1C750058DEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ED1CC255E1C750058DEA0 /* SceneDelegate.swift */; };
-		CF7ED1CF255E1C750058DEA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ED1CE255E1C750058DEA0 /* ViewController.swift */; };
 		CF7ED1D2255E1C750058DEA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7ED1D0255E1C750058DEA0 /* Main.storyboard */; };
 		CF7ED1D4255E1C770058DEA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7ED1D3255E1C770058DEA0 /* Assets.xcassets */; };
 		CF7ED1D7255E1C770058DEA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7ED1D5255E1C770058DEA0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF23D12C255E1F9800520ED2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF5CF991255E1DEF004A7CFC /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		CF5CF994255E1EB1004A7CFC /* Mock API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mock API.swift"; sourceTree = "<group>"; };
+		CF5CF997255E1EB7004A7CFC /* RealAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealAPI.swift; sourceTree = "<group>"; };
 		CF7ED1C7255E1C750058DEA0 /* MockAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7ED1CA255E1C750058DEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF7ED1CC255E1C750058DEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF7ED1CE255E1C750058DEA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF7ED1D1255E1C750058DEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF7ED1D3255E1C770058DEA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF7ED1D6255E1C770058DEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF5CF98A255E1D70004A7CFC /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				CF5CF991255E1DEF004A7CFC /* RequestProtocol.swift */,
+				CF5CF994255E1EB1004A7CFC /* Mock API.swift */,
+				CF5CF997255E1EB7004A7CFC /* RealAPI.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		CF5CF98B255E1D7A004A7CFC /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				CF7ED1CA255E1C750058DEA0 /* AppDelegate.swift */,
+				CF7ED1CC255E1C750058DEA0 /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		CF5CF98C255E1D7F004A7CFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF7ED1D3255E1C770058DEA0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF5CF98D255E1D9A004A7CFC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CF7ED1D0255E1C750058DEA0 /* Main.storyboard */,
+				CF7ED1D5255E1C770058DEA0 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CF5CF98F255E1DC1004A7CFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF23D12C255E1F9800520ED2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CF7ED1BE255E1C750058DEA0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +106,11 @@
 		CF7ED1C9255E1C750058DEA0 /* MockAPI */ = {
 			isa = PBXGroup;
 			children = (
-				CF7ED1CA255E1C750058DEA0 /* AppDelegate.swift */,
-				CF7ED1CC255E1C750058DEA0 /* SceneDelegate.swift */,
-				CF7ED1CE255E1C750058DEA0 /* ViewController.swift */,
-				CF7ED1D0255E1C750058DEA0 /* Main.storyboard */,
-				CF7ED1D3255E1C770058DEA0 /* Assets.xcassets */,
-				CF7ED1D5255E1C770058DEA0 /* LaunchScreen.storyboard */,
+				CF5CF98B255E1D7A004A7CFC /* Supports */,
+				CF5CF98C255E1D7F004A7CFC /* Resources */,
+				CF5CF98D255E1D9A004A7CFC /* StoryBoards */,
+				CF5CF98A255E1D70004A7CFC /* APIService */,
+				CF5CF98F255E1DC1004A7CFC /* Controller */,
 				CF7ED1D8255E1C770058DEA0 /* Info.plist */,
 			);
 			path = MockAPI;
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF7ED1CF255E1C750058DEA0 /* ViewController.swift in Sources */,
+				CF23D12D255E1F9800520ED2 /* ViewController.swift in Sources */,
 				CF7ED1CB255E1C750058DEA0 /* AppDelegate.swift in Sources */,
+				CF5CF998255E1EB7004A7CFC /* RealAPI.swift in Sources */,
 				CF7ED1CD255E1C750058DEA0 /* SceneDelegate.swift in Sources */,
+				CF5CF992255E1DEF004A7CFC /* RequestProtocol.swift in Sources */,
+				CF5CF995255E1EB1004A7CFC /* Mock API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

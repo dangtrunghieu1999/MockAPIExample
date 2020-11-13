@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let apiManager = MockAPI().shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let isAlive = apiManager.isServerAlive()
     }
 
-
 }
-
